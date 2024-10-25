@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Operativo Ubuntu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ubuntu: {
+                            orange: '#E95420',
+                            purple: '#772953',
+                            gray: {
+                                light: '#F7F7F7',
+                                medium: '#AEA79F',
+                                dark: '#333333'
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-ubuntu-gray-light text-ubuntu-gray-dark">
+
+    <!--Nav -->
+    <nav class="bg-ubuntu-orange text-white shadow-sm">
+        <div class="container mx-auto px-6 py-3">
+            <h1 class="text-2xl font-semibold">Sistema Operativo Ubuntu</h1>
+        </div>
+    </nav>
+
+    <!--Informacion -->
+    <main class="container mx-auto px-6 py-8">
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold mb-6 text-ubuntu-purple">Ubuntu</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <p class="text-lg leading-relaxed flex-1">
+                Ubuntu es un sistema operativo de código abierto basado en Linux,
+                diseñado para ser fácil de usar y accesible para personas con diferentes niveles de experiencia
+                tecnológica. Desarrollado y mantenido por Canonical Ltd., Ubuntu se destaca por su enfoque en la
+                simplicidad, seguridad y estabilidad. Está disponible de manera gratuita y es utilizado tanto en
+                computadoras de escritorio como en servidores y otros dispositivos.
+                <br><br>
+                Al estar basado en Linux, Ubuntu ofrece un entorno altamente personalizable y seguro, siendo menos
+                vulnerable a virus y malware. Viene con una interfaz gráfica amigable (GNOME es la predeterminada), y su
+                ecosistema incluye una gran variedad de software y herramientas útiles para usuarios comunes,
+                desarrolladores y administradores de sistemas.
+                Además, es popular en la comunidad de desarrollo de software, ya que soporta múltiples lenguajes de
+                programación y plataformas.
+            </p>
+                <img src="media/ubuntu.png" alt="Ubuntu logo" class="w-40 h-40">
+            </div>
+        </section>
+
+        <!--Historia -->
+        <section class="mb-16 bg-white p-6 rounded-lg shadow-sm">
+            <h2 class="text-4xl font-bold mb-6 text-ubuntu-purple">Historia</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <p class="text-lg leading-relaxed flex-1">
+                    Ubuntu fue lanzado por primera vez en 2004 por la empresa Canonical Ltd., cuyo
+                    fundador, Mark Shuttleworth, es un prendedor sudafricano. De hecho el nombre de este sistema, «ubuntu», significa
+                    «humanidad hacia los
+                    demás» en África. Ubuntu surgió como una bifurcación (derivado) Debian, una de las distribuciones de
+                    Linux más robustas y estables. A diferencia de Debian, que se
+                    enfocaba más en usuarios avanzados, Ubuntu fue diseñado para ser accesible para todos, incluidos los
+                    principiantes. Desde sus inicios, Ubuntu ha seguido un ciclo de lanzamientos regulares, con una versión
+                    estable cada seis meses y versiones de soporte a largo plazo (LTS) cada dos años, las cuales reciben
+                    actualizaciones de seguridad durante cinco años.
+                    <br>
+                    El nombre "Ubuntu" proviene de un concepto filosófico africano que significa "humanidad hacia los
+                    demás", reflejando su enfoque en la comunidad y el software libre.
+            </p>
+                <img src="media/ejemplo.png" alt="Ubuntu logo" class="w-40 h-40">
+            </div>
+        </section>
+
+        <!--Características -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Características Principales</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm border-t-4 border-ubuntu-orange">
+                    <h3 class="text-xl font-semibold mb-2 text-ubuntu-orange">Código Abierto</h3>
+                    <p class="text-ubuntu-gray-dark">
+                        Ubuntu es de código abierto, lo que significa que su código es público. Código abierto no siempre es
+                    sinónimo de gratuito, ya que no todas las distribuciones de Linux se pueden usar sin el pago de una
+                    licencia. En el caso de Ubuntu, sí se puede usar libremente en cualquiera de sus ediciones.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border-t-4 border-ubuntu-purple">
+                    <h3 class="text-xl font-semibold mb-2 text-ubuntu-purple">Comunidad Activa</h3>
+                    <p class="text-ubuntu-gray-dark">
+                        Ubuntu es uno de los sistemas operativos con una comunidad más amplia. Además, sus usuarios son muy
+                        activos y amigables, dispuestos a ayudar a los usuarios ante cualquier situación. Esto es importante a
+                        la hora de escoger un sistema operativo, porque nos permitirá resolver fácilmente los problemas que
+                        puedan surgir. Por su parte, ya bajo pago, Canonical ofrece también soporte profesional y servicios de
+                        consultoría para empresas.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border-t-4 border-ubuntu-orange">
+                    <h3 class="text-xl font-semibold mb-2 text-ubuntu-orange">Seguridad y Estabilidad</h3>
+                    <p class="text-ubuntu-gray-dark">
+                        Ubuntu es además conocido por su estabilidad y seguridad. Esto es un factor común en todos los sistemas
+                        basados en Linux, que son menos propensos a virus y malware que otros sistemas. Además, gracias a las
+                        actualizaciones de seguridad publicadas regularmente, podemos estar protegidos ante agujeros de
+                        seguridad tanto en el propio sistema como en las aplicaciones instaladas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--Cuadro Comparativo -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Comparativa de Sistemas Operativos</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white shadow-sm">
+                    <thead class="bg-ubuntu-orange text-white">
+                        <tr>
+                            <th class="p-3 text-left">Sistema Operativo</th>
+                            <th class="p-3 text-left">Ventajas</th>
+                            <th class="p-3 text-left">Desventajas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p-3">Ubuntu</td>
+                            <td class="p-3">Libre, seguro, personalizable</td>
+                            <td class="p-3">Compatibilidad limitada con ciertos programas</td>
+                        </tr>
+                        <tr class="bg-ubuntu-gray-light">
+                            <td class="p-3">Windows</td>
+                            <td class="p-3">Amplia compatibilidad, facilidad de uso</td>
+                            <td class="p-3">Licencia costosa, vulnerabilidad a virus</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3">macOS</td>
+                            <td class="p-3">Optimización de hardware, fácil de usar</td>
+                            <td class="p-3">Sistema cerrado, costoso</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!--Requerimientos del Sistema -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Requerimientos del Sistema</h2>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="border-l-4 border-ubuntu-orange pl-4">
+                        <h3 class="text-xl font-semibold mb-2 text-ubuntu-orange">Mínimos:</h3>
+                        <ul class="list-disc list-inside text-ubuntu-gray-dark">
+                            <li>Procesador: 2 GHz</li>
+                            <li>RAM: 4 GB</li>
+                            <li>Espacio en disco: 25 GB</li>
+                            <li>Tarjeta gráfica con soporte para gráficos 3D</li>
+                        </ul>
+                    </div>
+                    <div class="border-l-4 border-ubuntu-purple pl-4">
+                        <h3 class="text-xl font-semibold mb-2 text-ubuntu-purple">Recomendados:</h3>
+                        <ul class="list-disc list-inside text-ubuntu-gray-dark">
+                            <li>Procesador: 2 GHz o superior</li>
+                            <li>RAM: 8 GB</li>
+                            <li>Espacio en disco: 50 GB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Video de introducción a ubuntu -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Video: Introducción a Ubuntu</h2>
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe src="https://www.youtube.com/embed/FH7SAR5yyow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-[285px] md:h-[480px]"></iframe>
+            </div>
+        </section>
+
+        <!--Video de como instalar UBUNTU -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Video: Instalar Ubuntu</h2>
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe src="https://www.youtube.com/embed/8MRibUo9VAA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-[285px] md:h-[480px]"></iframe>
+        </section>
+
+        <!--Conclusiones -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Conclusiones</h2>
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-ubuntu-orange">
+                <p class="text-ubuntu-gray-dark">
+                    Poner Conclusiones
+                </p>
+            </div>
+        </section>
+
+        <!--Enlaces a otras paginas -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Recursos Relacionados</h2>
+            <div class="flex flex-wrap gap-4">
+                <a href="https://ubuntu.com" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-ubuntu-orange text-white rounded-md hover:bg-ubuntu-purple transition-colors">Página oficial de Ubuntu</a>
+                <a href="https://ubuntuforums.org" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-ubuntu-orange text-white rounded-md hover:bg-ubuntu-purple transition-colors">Foro de la comunidad de Ubuntu</a>
+                <a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-ubuntu-orange text-white rounded-md hover:bg-ubuntu-purple transition-colors">Tutorial de instalación de Ubuntu</a>
+                <a href="https://snapcraft.io" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-ubuntu-orange text-white rounded-md hover:bg-ubuntu-purple transition-colors">Tienda de software de Ubuntu</a>
+            </div>
+        </section>
+
+        <!--Perfiles -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Nuestro Equipo</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center border-t-4 border-ubuntu-orange">
+                    <img src="media/FotoPerfil.JPG" alt="Uzziel Aparicio" class="w-24 h-24 rounded-full mb-4">
+                    <h3 class="text-xl font-semibold text-ubuntu-orange">Uzziel Aparicio</h3>
+                    <p class="text-ubuntu-gray-dark">Software Developer</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center border-t-4 border-ubuntu-purple">
+                    <img src="" alt="Michael Aparicio" class="w-24 h-24 rounded-full mb-4">
+                    <h3 class="text-xl font-semibold  text-ubuntu-purple">Michael Aparicio</h3>
+                    <p class="text-ubuntu-gray-dark">Software Developer</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center border-t-4 border-ubuntu-orange">
+                    <img src="media/RichardZhang.jpg" alt="Richard Zhang" class="w-24 h-24 rounded-full mb-4">
+                    <h3 class="text-xl font-semibold text-ubuntu-orange">Richard Zhang</h3>
+                    <p class="text-ubuntu-gray-dark">Software Developer</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center border-t-4 border-ubuntu-purple">
+                    <img src="media/Javier.jpg" alt="Javier Hernandez" class="w-24 h-24 rounded-full mb-4">
+                    <h3 class="text-xl font-semibold text-ubuntu-purple">Javier Hernandez</h3>
+                    <p class="text-ubuntu-gray-dark">Software Developer</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center border-t-4 border-ubuntu-orange">
+                    <img src="media/Emily.jpg" alt="Emily Perez" class="w-24 h-24 rounded-full mb-4">
+                    <h3 class="text-xl font-semibold text-ubuntu-orange">Emily Perez</h3>
+                    <p class="text-ubuntu-gray-dark">Software Developer</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Información Blog-->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Información del Grupo</h2>
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-ubuntu-orange">
+                <ul class="space-y-2 text-ubuntu-gray-dark">
+                    <li><strong class="text-ubuntu-orange">Profesor:</strong> Isaac Esquivel</li>
+                    <li><strong class="text-ubuntu-orange">Universidad:</strong> Universidad Tecnológica de Panamá</li>
+                    <li><strong class="text-ubuntu-orange">Facultad:</strong> Ingeniería en Sistemas Computacionales</li>
+                    <li><strong class="text-ubuntu-orange">Departamento:</strong> Programación</li>
+                    <li><strong class="text-ubuntu-orange">Carrera:</strong> Lic. Desarrollo de Software</li>
+                    <li><strong class="text-ubuntu-orange">Grupo:</strong> 1LS131</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer -->
+    <footer class="bg-ubuntu-purple text-white py-6 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Todos los derechos reservados.</p>
+            <p class="mt-2">Universidad Tecnológica de Panamá - Lic. Desarrollo de Software</p>
+        </div>
+    </footer>
+</body>
+</html>
