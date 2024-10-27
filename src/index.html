@@ -30,15 +30,41 @@
 <body class="min-h-screen bg-ubuntu-gray-light text-ubuntu-gray-dark">
 
     <!--Nav -->
-    <nav class="bg-ubuntu-orange text-white shadow-sm">
-        <div class="container mx-auto px-6 py-3">
-            <h1 class="text-2xl font-semibold">Sistema Operativo Ubuntu</h1>
-        </div>
-    </nav>
-
+    <section>
+        <nav class="bg-ubuntu-orange text-white shadow-sm">
+            <div class="container mx-auto px-6 py-3" id="titulo">
+                <h1 class="text-4xl font-semibold">Sistema Operativo Ubuntu</h1>
+            </div>
+            <div class="container mx-auto px-6 py-3">
+                <button class="md:hidden" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                    </svg>
+                </button>
+                <ul class="hidden md:flex gap-4 " id="menu">
+                    <li class="md:hidden">
+                        <button onclick="toggleMenu()" class="text-right w-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li><a href="#informacion">Información</a></li>
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#comparativa">Comparativa</a></li>
+                    <li><a href="#requerimientos">Requerimientos</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <img src="media/ubuntuWIDE.jpg" class="grid w-full"/>
     <!--Informacion -->
-    <main class="container mx-auto px-6 py-8">
-        <section class="mb-16">
+    <main class="container mx-auto px-6 py-8"> 
+        <section class="mb-16" id="informacion">
             <h2 class="text-4xl font-bold mb-6 text-ubuntu-purple">Ubuntu</h2>
             <div class="flex flex-col md:flex-row items-center gap-8">
                 <p class="text-lg leading-relaxed flex-1">
@@ -55,12 +81,12 @@
                 Además, es popular en la comunidad de desarrollo de software, ya que soporta múltiples lenguajes de
                 programación y plataformas.
             </p>
-                <img src="media/ubuntu.png" alt="Ubuntu logo" class="w-40 h-40">
+                <img src="media/ubuntu.png" alt="Ubuntu logo" class="w-40 h-40 drop-shadow-2xl">
             </div>
         </section>
 
         <!--Historia -->
-        <section class="mb-16 bg-white p-6 rounded-lg shadow-sm">
+        <section class="mb-16 bg-white p-6 rounded-lg shadow-sm" id="historia">
             <h2 class="text-4xl font-bold mb-6 text-ubuntu-purple">Historia</h2>
             <div class="flex flex-col md:flex-row items-center gap-8">
                 <p class="text-lg leading-relaxed flex-1">
@@ -74,12 +100,15 @@
                     estable cada seis meses y versiones de soporte a largo plazo (LTS) cada dos años, las cuales reciben
                     actualizaciones de seguridad durante cinco años.
             </p>
-                <img src="media/ejemplo.png" alt="Ubuntu logo" class="w-40 h-40">
+                <figure class="place-items-center">
+                    <img src="media/MarkShuttleworth.jpg" alt="Ubuntu logo" class="w-60 h-50 rounded-lg shadow-xl">
+                    <figcaption class="text-center text-sm text-ubuntu-gray-dark">Mark Shuttleworth, fundador de Canonical Ltd.</figcaption>
+                </figure>   
             </div>
         </section>
 
         <!--Características -->
-        <section class="mb-16">
+        <section class="mb-16" id="caracteristicas">
             <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Características Principales</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="bg-white p-6 rounded-lg shadow-sm border-t-4 border-ubuntu-orange">
@@ -113,7 +142,7 @@
         </section>
 
         <!--Cuadro Comparativo -->
-        <section class="mb-16">
+        <section class="mb-16" id="comparativa">
             <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Comparativa de Sistemas Operativos</h2>
             <div class="overflow-x-auto">
                 <table class="w-full bg-white shadow-sm">
@@ -127,18 +156,19 @@
                     <tbody>
                         <tr>
                             <td class="p-3">Ubuntu</td>
-                            <td class="p-3">Libre, seguro, personalizable</td>
-                            <td class="p-3">Compatibilidad limitada con ciertos programas</td>
+                            <td class="p-3"><li>Libre</li><li>seguro</li><li>personalizable</li></td>
+                            <td class="p-3"><li>Compatibilidad</li><li>Limita ciertos programas</li></td>
                         </tr>
                         <tr class="bg-ubuntu-gray-light">
                             <td class="p-3">Windows</td>
-                            <td class="p-3">Amplia compatibilidad, facilidad de uso</td>
-                            <td class="p-3">Licencia costosa, vulnerabilidad a virus</td>
+                            <td class="p-3"><li>Amplia compatibilidad</li><li>Facilidad de uso</li>
+                            </td>
+                            <td class="p-3"><li>Licencia costosa</li><li>vulnerabilidad a viruz</li></td>
                         </tr>
                         <tr>
                             <td class="p-3">macOS</td>
-                            <td class="p-3">Optimización de hardware, fácil de usar</td>
-                            <td class="p-3">Sistema cerrado, costoso</td>
+                            <td class="p-3"><li>Optimización de hardware</li><li>Facil de usar</li></td>
+                            <td class="p-3"><li>Sistema cerrado</li><li>Costoso</li></td>
                         </tr>
                     </tbody>
                 </table>
@@ -146,7 +176,7 @@
         </section>
 
         <!--Requerimientos del Sistema -->
-        <section class="mb-16">
+        <section class="mb-16" id="requerimientos">
             <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Requerimientos del Sistema</h2>
             <div class="bg-white p-6 rounded-lg shadow-sm">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -171,27 +201,54 @@
             </div>
         </section>
 
-        <!--Video de introducción a ubuntu -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Video: Introducción a Ubuntu</h2>
+        <!--Video de ¿Qué es Ubuntu?-->
+        <section class="mb-16" id="videos">
+            <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Video #1: ¿Qué es Ubuntu?</h2>
             <div class="aspect-w-16 aspect-h-9">
                 <iframe src="https://www.youtube.com/embed/FH7SAR5yyow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-[285px] md:h-[480px]"></iframe>
+                <a href="https://www.youtube.com/watch?v=FH7SAR5yyow" target="_blank" rel="noopener noreferrer" class="text-ubuntu-orange mt-2 hover:bg-slate-200 hover:rounded-sm">Ver en YouTube</a>
             </div>
         </section>
 
-        <!--Video de como instalar UBUNTU -->
+        <!--Video de 🟣 Cómo instalar UBUNTU 22.04 PASO a PASO desde cero! TUTORIAL 📀-->
         <section class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Video: Instalar Ubuntu</h2>
+            <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Video #2: 🟣 Cómo instalar UBUNTU 22.04 PASO a PASO desde cero! TUTORIAL 📀</h2>
             <div class="aspect-w-16 aspect-h-9">
                 <iframe src="https://www.youtube.com/embed/8MRibUo9VAA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-[285px] md:h-[480px]"></iframe>
-        </section>
+                <a href="https://www.youtube.com/embed/8MRibUo9VAA" target="_blank" rel="noopener noreferrer" class="text-ubuntu-orange mt-2 hover:bg-slate-200 hover:rounded-sm">Ver en YouTube</a>
+            </section>
 
         <!--Conclusiones -->
         <section class="mb-16">
             <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Conclusiones</h2>
-            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-ubuntu-orange">
-                <p class="text-ubuntu-gray-dark">
-                    Poner Conclusiones
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-ubuntu-orange flex flex-row mb-3">
+                <img src="media/MichaelAparicio.jpeg" alt="Michael Aparicio Conclusiones" class="w-24 h-24 ml-2 mr-4 rounded-full">
+                <p class="text-left text-ubuntu-gray-dark">
+                    En resumen, puedo decir que Ubuntu es un sistema operativo muy completo y versátil, que ofrece una gran cantidad de ventajas y beneficios para los usuarios. Su facilidad de uso, seguridad, estabilidad y personalización lo convierten en una excelente opción para todo tipo de usuarios, desde principiantes hasta expertos. Además, su comunidad activa y amigable es un gran recurso para resolver dudas y problemas. En general, Ubuntu es una excelente opción para todos los usuarios que buscan un sistema operativo seguro, estable y fácil de usar.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-ubuntu-orange flex flex-row mb-3">
+                <img src="media/FotoPerfil.JPG" alt="Michael Aparicio Conclusiones" class="w-24 h-24 ml-2 mr-4 rounded-full">
+                <p class="text-left text-ubuntu-gray-dark">
+                    Al igual que otras versiones de Linux, Ubuntu es un sistema operativo de código abierto, lo que significa que su código fuente es accesible para todos. Esto permite a los usuarios modificarlo y adaptarlo a sus necesidades, lo que lo hace muy flexible y personalizable. Además, Ubuntu es conocido por su seguridad y estabilidad, lo que lo convierte en una excelente opción para usuarios que buscan un sistema operativo confiable y seguro. 
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-ubuntu-orange flex flex-row mb-3">
+                <img src="media/RichardZhang.jpg" alt="Michael Aparicio Conclusiones" class="w-24 h-24 ml-2 mr-4 rounded-full">
+                <p class="text-left text-ubuntu-gray-dark">
+                    Linux Ubuntu es un sistema operativo muy popular y ampliamente utilizado en todo el mundo. Es conocido por su facilidad de uso, seguridad y estabilidad, lo que lo convierte en una excelente opción para usuarios de todos los niveles. Además, Ubuntu es de código abierto, lo que significa que su código fuente es accesible para todos lo permite a los usuarios modificarlo y adaptarlo a sus necesidades, lo que lo hace muy flexible y personalizable. 
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-ubuntu-orange flex flex-row mb-3">
+                <img src="media/Javier.jpg" alt="Michael Aparicio Conclusiones" class="w-24 h-24 ml-2 mr-4 rounded-full">
+                <p class="text-left text-ubuntu-gray-dark">
+                    Concluyendo, Ubuntu es una excelente opción para usuarios que buscan un sistema operativo seguro, estable y fácil de usar. Su comunidad activa y amigable, su flexibilidad y personalización, y su enfoque en la seguridad y la estabilidad lo convierten en una excelente opción para usuarios de todos los niveles.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-ubuntu-orange flex flex-row mb-3">
+                <img src="media/Emily.jpg" alt="Michael Aparicio Conclusiones" class="w-24 h-24 ml-2 mr-4 rounded-full">
+                <p class="text-left text-ubuntu-gray-dark">
+                    Ubuntu es una de las tantas versiones de Linux que existen en el mercado, pero es una de las más populares y utilizadas. Su facilidad de uso, su seguridad y su estabilidad lo hacen una excelente opción para todos los usuarios. Además, su comunidad activa y amigable es un gran recurso para resolver dudas y problemas. 
                 </p>
             </div>
         </section>
@@ -207,8 +264,20 @@
             </div>
         </section>
 
-        <!--Perfiles -->
+        <!--Referencias Bibliograficas-->
         <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Referencias Bibliograficas</h2>
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-ubuntu-orange">
+                <ol class=" list-inside text-ubuntu-gray-dark">
+                    <li>Sistema operativo <i>UBUNTU | Educa Panamá | Mi Portal Educativo.</i>(2024). Educapanama.edu.pa. <br><a href="https://www.educapanama.edu.pa/?q=articulos-educativos/presentaciones/sistema-operativo-ubuntu" class="text-blue-500 hover:text-blue-600"> https://www.educapanama.edu.pa/?q=articulos-educativos/presentaciones/sistema-operativo-ubuntu</a></li>
+                    <li>de, C. (2008, May 13). <i>Mark Shuttleworth.</i> Wikipedia.org; Wikimedia Foundation, Inc. <br><a href="https://ast.wikipedia.org/wiki/Mark_Shuttleworth" class="text-blue-500 hover:text-blue-600">https://ast.wikipedia.org/wiki/Mark_Shuttleworth</a></li>
+                    <li>Differences between Windows, macOS, and Linux operating systems.(2015). Educative. <br><a href="https://www.educative.io/answers/differences-between-windows-macos-and-linux-operating-systems" class="text-blue-500 hover:text-blue-600">https://www.educative.io/answers/differences-between-windows-macos-and-linux-operating-systems</a></li>
+                    <li>for, R. (2024). <i>System Requirements for Ubuntu. CPanel & WHM Documentation.</i> <br><a href="https://docs.cpanel.net/installation-guide/system-requirements-ubuntu/" class="text-blue-500 hover:text-blue-600">https://docs.cpanel.net/installation-guide/system-requirements-ubuntu/</a></li>
+                </ol>
+        </section>
+
+        <!--Perfiles -->
+        <section class="mb-16" id="equipo">
             <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Nuestro Equipo</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center border-t-4 border-ubuntu-orange">
@@ -239,7 +308,7 @@
             </div>
         </section>
 
-        <!--Información Blog-->
+        <!--Información del grupo-->
         <section class="mb-16">
             <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Información del Grupo</h2>
             <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-ubuntu-orange">
@@ -253,6 +322,29 @@
                 </ul>
             </div>
         </section>
+
+        <!--Contacto-->
+        <section class="mb-16" id="Contacto">
+            <h2 class="text-3xl font-bold mb-6 text-ubuntu-purple">Contacto</h2>
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-ubuntu-orange">
+                <form action="https://formspree.io/f/mqakebkz" method="POST">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-ubuntu-gray-dark">Nombre:</label>
+                            <input type="text" id="name" name="name" class="w-full p-2 border border-ubuntu-gray-medium rounded-md">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-ubuntu-gray-dark">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" class="w-full p-2 border border-ubuntu-gray-medium rounded-md">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-ubuntu-gray-dark">Mensaje:</label>
+                        <textarea name="message" id="message" rows="4" class="w-full p-2 border border-ubuntu-gray-medium rounded-md"></textarea>
+                    </div>
+                    <button type="submit" class="bg-ubuntu-orange text-white px-4 py-2 rounded-md hover:bg-ubuntu-purple transition-colors">Enviar</button>
+        </section>
+
     </main>
 
     <!--Footer -->
@@ -262,5 +354,21 @@
             <p class="mt-2">Universidad Tecnológica de Panamá - Lic. Desarrollo de Software</p>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('top-16'); /* Ajusta según la altura de tu nav */
+            menu.classList.toggle('left-0');
+            menu.classList.toggle('right-0');
+            menu.classList.toggle('bg-ubuntu-orange');
+            menu.classList.toggle('z-10');
+            menu.classList.toggle('p-4');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('gap-4');
+        }
+    </script>
 </body>
 </html>
